@@ -9,11 +9,11 @@ Este proyecto consta de tres fases:
 #### `3. Modelamiento y evaluación`
 
 ## Todo
-- [] Entender la problemática y comprender los datos.
-- [] Realizar el análisis exploratorio de los datos y prepararlos para el siguiente TO-DO.
-- [] Experimentar con los modelos de machine learning en un contexto real.
-- [] Usar las métricas correspondientes para medir el performance de los modelos.
-- [] Seleccionar el mejor modelo.
+- [ ] Entender la problemática y comprender los datos.
+- [ ] Realizar el análisis exploratorio de los datos y prepararlos para el siguiente TO-DO.
+- [ ] Experimentar con los modelos de machine learning en un contexto real.
+- [ ] Usar las métricas correspondientes para medir el performance de los modelos.
+- [ ] Seleccionar el mejor modelo.
 
 
 
