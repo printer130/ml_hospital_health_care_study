@@ -2,7 +2,7 @@
 
 ## Introducción
 
-Este proyecto consta de tres fases:
+Tres fases **_sine qua non_**:
 
 #### `1. Análisis exploratorio de datos`
 #### `2. Transformar y preparar los datos adecuadamente`
