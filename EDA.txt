@@ -1,0 +1,50 @@
+# Entender la problemática y comprender los datos
+
+Tenemos una tabla con 20 columnas:
+---
+EDAD	DIABETES	HOSPITALIZACIÓN ULTIMO MES	PSA	BIOPSIAS PREVIAS	VOLUMEN PROSTATICO	ANTIBIOTICO UTILIAZADO EN LA PROFILAXIS	NUMERO DE MUESTRAS TOMADAS	CUP	ENF. CRONICA PULMONAR OBSTRUCTIVA	BIOPSIA	NUMERO DE DIAS POST BIOPSIA EN QUE SE PRESENTA LA COMPLICACIÓN INFECCIOSA	FIEBRE	ITU	TIPO DE CULTIVO	AGENTE AISLADO	PATRON DE RESISTENCIA	HOSPITALIZACION	DIAS HOSPITALIZACION MQ	DIAS HOSPITALIZACIÓN UPC
+---
+Nuestro Objetivo
+Determinar las características más importantes que tienen los pacientes de cierto tipo de enfermedad que terminan hospitalizados.
+
+Analisaremos cada columna con el objetivo de verificar "Data" que sea redundante y si es asi eliminarla y comprender los datos que nos estamos enfrentando.
+
+EDAD: Los pacientes que tengan mas edad posiblemente sean mas propensos a quedar HOSPITALIZADOS de uno mas joven.
+
+DIABETES: Un paciente con diabetes es probable que tenga un sistema inmunologico mas debil comparado con uno sano, por lo tanto mas propenso a enfermedades y quedar HOSPITALIZADO.
+
+HOSPITALIZACIÓN ULTIMO MES: Este dato es una indicación clara de que el paciente ha estado recientemente HOSPITALIZADO y es un factor importante en la probabilidad de ser HOSPITALIZADO nuevamente. Si un paciente ha sido HOSPITALIZADO en el último mes, es más probable que necesite tratamiento médico adicional y, por lo tanto, tenga una mayor probabilidad de ser HOSPITALIZADO de nuevo.
+
+PSA: Es una proteína producida por la próstata (Antígeno Prostático Específico). Niveles elevados pueden indicar la presencia de cáncer de próstata, lo cual podría ser un factor para la HOSPITALIZACIÓN del paciente.
+
+BIOPSIAS PREVIAS: Dado que esta con diagnostico previo puede ser un indicativo de alguna enfermedad de riesgo, infecciones, complicaciones y así quedar HOSPITALIZADO.
+
+VOLUMEN PROSTATICO: Un volumen prostático aumentado puede ser un factor de riesgo para el cáncer de próstata y otras enfermedades relacionadas con la próstata, lo que podría llevar a la HOSPITALIZACIÓN del paciente.
+
+ANTIBIOTICO UTILIAZADO EN LA PROFILAXIS: El uso de antibióticos para prevenir infecciones después de procedimientos como biopsias o cirugías puede ser un factor que afecte la salud del paciente y quedar HOSPITALIZADO.
+
+NUMERO DE MUESTRAS TOMADAS: Un mayor número de muestras tomadas durante una biopsia puede ser un indicativo de algúna enfermedad infecciosa que tienda a complicarse , y así quedar HOSPITALIZADO.
+
+CUP: La presencia de una lesión sospechosa en la próstata (Carcinoma de Próstata Desconocido), puede requerir HOSPITALIZACIÓN para una evaluación completa o tratamiento.
+
+ENF. CRONICA PULMONAR OBSTRUCTIVA: Puede aumentar el riesgo de infecciones respiratorias, exacerbaciones y como no quedar HOSPITALIZADO.
+
+BIOPSIA: La realización de una biopsia puede ser indicativo de infecciones o complicaciones, lo que podría dar como resultado HOSPITALIZACIÓN.
+
+NUMERO DE DIAS POST BIOPSIA EN QUE SE PRESENTA LA COMPLICACIÓN INFECCIOSA: Cuanto más tiempo ha pasado desde la biopsia, menos probable que el paciente quede HOSPITALIZADO sin embargo no se da en el 100% de los casos.
+
+FIEBRE: Podría requerir HOSPITALIZACIÓN si se vuelve grave.
+
+ITU: Una infección del tracto urinario puede ser un factor que aumente la probabilidad de HOSPITALIZACIÓN si se vuelve grave y se extiende a los riñones o la vejiga.
+
+TIPO DE CULTIVO: Puede indicar la presencia de bacterias específicas, lo que podría afectar el tratamiento y la necesidad de HOSPITALIZACIÓN del paciente.
+
+AGENTE AISLADO: Puede ser un indicador de la necesidad que el paciente quede HOSPITALIZADO.
+
+PATRON DE RESISTENCIA: Indica la resistencia a ciertos antibióticos, lo que podría afectar el tratamiento y la necesidad de HOSPITALIZACIÓN.
+
+HOSPITALIZACION: Si el paciente ha sido HOSPITALIZADO previamente, es más probable que requiera hospitalización nuevamente en el futuro.
+
+DIAS HOSPITALIZACION MQ: La cantidad de días que el paciente estuvo hospitalizado durante su última hospitalización puede ser un factor para determinar su probabilidad de ser hospitalizado nuevamente sin embargo podria ser redundante ya anteriormente quedo HOSPITALIZADO.
+
+DIAS HOSPITALIZACIÓN UPC: La cantidad de días que el paciente estuvo hospitalizado en la Unidad de Cuidados Intensivos (UCI) puede ser un factor importante para determinar su probabilidad de ser HOSPITALIZADO nuevamente, especialmente si la HOSPITALIZACIÓN en la UCI se debió a una complicación grave o a una enfermedad crónica sin embargo el paciente ya quedo HOSPITALIZADO.
