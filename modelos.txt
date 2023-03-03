@@ -1,0 +1,52 @@
+Regresión logística:
+from sklearn.linear_model import LogisticRegression
+# Cargar datos
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+# Inicializar modelo de regresión logística
+logreg = LogisticRegression()
+# Entrenar modelo
+logreg.fit(X_train, y_train)
+# Predecir etiquetas de clase para datos de prueba
+y_pred = logreg.predict(X_test)
+# Evaluar el rendimiento del modelo
+accuracy = accuracy_score(y_test, y_pred)
+
+Árboles de decisión:
+from sklearn.tree import DecisionTreeClassifier
+# Cargar datos
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+# Inicializar modelo de árbol de decisión
+clf = DecisionTreeClassifier()
+# Entrenar modelo
+clf.fit(X_train, y_train)
+# Predecir etiquetas de clase para datos de prueba
+y_pred = clf.predict(X_test)
+# Evaluar el rendimiento del modelo
+accuracy = accuracy_score(y_test, y_pred)
+
+Bosques aleatorios:
+from sklearn.ensemble import RandomForestClassifier
+# Cargar datos
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+# Inicializar modelo de bosque aleatorio
+rfc = RandomForestClassifier()
+# Entrenar modelo
+rfc.fit(X_train, y_train)
+# Predecir etiquetas de clase para datos de prueba
+y_pred = rfc.predict(X_test)
+# Evaluar el rendimiento del modelo
+accuracy = accuracy_score(y_test, y_pred)
+
+Máquinas de vectores de soporte (SVM):
+
+from sklearn.svm import SVC
+# Cargar datos
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+# Inicializar modelo de SVM
+svc = SVC()
+# Entrenar modelo
+svc.fit(X_train, y_train)
+# Predecir etiquetas de clase para datos de prueba
+y_pred = svc.predict(X_test)
+# Evaluar el rendimiento del modelo
+accuracy = accuracy_score(y_test, y_pred)
